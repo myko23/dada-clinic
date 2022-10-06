@@ -5,7 +5,7 @@ const slice = createSlice({
 	initialState: {
 		patienttab: false,
 		view: "general",
-		login: true,
+		login: false,
 		bigmodal: "default",
 		confirm: {
 			confirmmodal: false,
