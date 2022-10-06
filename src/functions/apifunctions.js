@@ -6,20 +6,22 @@ export const useGetFetchQuery = (key) => {
 	return queryClient.getQueryData(key);
 };
 
+const api = axios.create({ baseURL: "http://localhost:3001" });
+
 //GET FUNCTIONS
 
 export const fetchPatientsAPI = async (userId) => {
-	const response = await axios.get("http://localhost:3001/patients", {
+	const response = await api.get("/patients", {
 		params: { user_id: userId },
 	});
 	return response.data;
 };
 export const fetchConsultationsAPI = async () => {
-	const response = await axios.get("http://localhost:3001/consultations");
+	const response = await api.get("/consultations");
 	return response.data;
 };
 export const fetchAdmissionAPI = async () => {
-	const response = await axios.get("http://localhost:3001/admissions");
+	const response = await api.get("/admissions");
 	return response.data;
 };
 
@@ -27,36 +29,27 @@ export const fetchAdmissionAPI = async () => {
 
 export const useAddPatientMutation = () => {
 	const queryClient = useQueryClient();
-	return useMutation(
-		(body) => axios.post("http://localhost:3001/patients", body),
-		{
-			onSuccess: () => {
-				queryClient.refetchQueries("patients");
-			},
-		}
-	);
+	return useMutation((body) => api.post("/patients", body), {
+		onSuccess: () => {
+			queryClient.refetchQueries("patients");
+		},
+	});
 };
 export const useAddConsultationMutation = () => {
 	const queryClient = useQueryClient();
-	return useMutation(
-		(body) => axios.post("http://localhost:3001/consultations", body),
-		{
-			onSuccess: () => {
-				queryClient.refetchQueries("consultations");
-			},
-		}
-	);
+	return useMutation((body) => api.post("/consultations", body), {
+		onSuccess: () => {
+			queryClient.refetchQueries("consultations");
+		},
+	});
 };
 export const useAddAdmissionMutation = () => {
 	const queryClient = useQueryClient();
-	return useMutation(
-		(body) => axios.post("http://localhost:3001/admissions", body),
-		{
-			onSuccess: () => {
-				queryClient.refetchQueries("admissions");
-			},
-		}
-	);
+	return useMutation((body) => api.post("/admissions", body), {
+		onSuccess: () => {
+			queryClient.refetchQueries("admissions");
+		},
+	});
 };
 
 //PUT
@@ -64,10 +57,7 @@ export const useEditPatientMutation = () => {
 	const queryClient = useQueryClient();
 	return useMutation(
 		(content) =>
-			axios.put(
-				"http://localhost:3001/patients/" + content.id.toString(),
-				content.body
-			),
+			api.put("/patients/" + content.id.toString(), content.body),
 		{
 			onSuccess: () => {
 				queryClient.refetchQueries("patients");
@@ -79,10 +69,7 @@ export const useEditConsultationMutation = () => {
 	const queryClient = useQueryClient();
 	return useMutation(
 		(content) =>
-			axios.put(
-				"http://localhost:3001/consultations/" + content.id.toString(),
-				content.body
-			),
+			api.put("/consultations/" + content.id.toString(), content.body),
 		{
 			onSuccess: () => {
 				queryClient.refetchQueries("consultations");
@@ -94,10 +81,7 @@ export const useEditAdmissionsMutation = () => {
 	const queryClient = useQueryClient();
 	return useMutation(
 		(content) =>
-			axios.put(
-				"http://localhost:3001/admissions/" + content.id.toString(),
-				content.body
-			),
+			api.put("/admissions/" + content.id.toString(), content.body),
 		{
 			onSuccess: () => {
 				queryClient.refetchQueries("admissions");
@@ -107,7 +91,5 @@ export const useEditAdmissionsMutation = () => {
 };
 //LOGIN
 export const useLoginMutation = () => {
-	return useMutation((body) =>
-		axios.post("http://localhost:3001/users/login", body)
-	);
+	return useMutation((body) => api.post("/users/login", body));
 };
