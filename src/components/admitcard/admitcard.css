@@ -1,0 +1,37 @@
+.admitcard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.8rem 2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	border-bottom: 1px solid var(--secondary);
+	overflow-x: auto;
+	line-height: 3rem;
+
+	white-space: nowrap;
+}
+.admitcard--selected {
+	background-color: var(--selected);
+}
+.admitcard:first-of-type {
+	border-top: 1px solid var(--secondary);
+}
+.admitcard:hover {
+	background-color: var(--selected);
+	font-size: 2rem;
+}
+.admitcard__diagnosis {
+	text-transform: uppercase;
+	font-weight: 1000;
+	font-size: 3.5rem;
+}
+.admitcard__subcontent {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2rem;
+}
+.admitcard__duration {
+	font-size: 2rem;
+}

@@ -1,0 +1,46 @@
+.dateinput {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.dateinput__edit--true .dateinput__input {
+	border-bottom: 1px solid black;
+}
+.dateinput__edit--false .dateinput__input {
+	pointer-events: none;
+	border: none;
+}
+
+.dateinput__label {
+	align-self: flex-start;
+	font-weight: 1000;
+	margin-left: 0.5rem;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+}
+.dateinput__input-set {
+	outline: none;
+	border-radius: 0.5rem;
+
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.dateinput__icon {
+	font-size: 1.5rem;
+	padding: 0 5px 0 8px;
+}
+.dateinput__input {
+	font-size: 3rem;
+	text-align: center;
+	border: none;
+	background-color: inherit;
+	font-weight: 1000;
+	text-align: center;
+}
+.dateinput__input--month {
+	text-align: left;
+}

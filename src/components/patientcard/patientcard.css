@@ -1,0 +1,37 @@
+.patientcard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.8rem 2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	border-bottom: 1px solid var(--secondary);
+	overflow-x: auto;
+
+	white-space: nowrap;
+}
+.patientcard--selected {
+	background-color: var(--selected);
+}
+.patientcard:first-of-type {
+	border-top: 1px solid var(--secondary);
+}
+.patientcard:hover {
+	background-color: var(--selected);
+	font-size: 2rem;
+}
+.patientcard__name {
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: 1000;
+}
+.patientcard__sub-content {
+	width: 100%;
+	display: flex;
+	gap: 5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.patientcard__label {
+	font-weight: 1000;
+}

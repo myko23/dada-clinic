@@ -1,0 +1,41 @@
+.consultcard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.8rem 2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	border-bottom: 1px solid var(--secondary);
+	overflow-x: auto;
+	line-height: 2.5rem;
+
+	white-space: nowrap;
+}
+.consultcard--selected {
+	background-color: var(--selected);
+}
+.consultcard:first-of-type {
+	border-top: 1px solid var(--secondary);
+}
+.consultcard:hover {
+	background-color: var(--selected);
+	font-size: 2rem;
+}
+.consultcard__topcontent {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.consultcard__chiefcomplaint {
+	text-transform: capitalize;
+	font-size: 3rem;
+	font-weight: 1000;
+}
+.consultcard__date {
+	font-size: 1.8rem;
+}
+.consultcard__assessment {
+	font-size: 2rem;
+	text-transform: capitalize;
+}

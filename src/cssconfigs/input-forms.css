@@ -1,0 +1,25 @@
+.forms {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.form-row {
+	display: flex;
+	gap: 5rem;
+}
+.form-buttons {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+.form-edit-buttons {
+	position: sticky;
+	margin-top: auto;
+
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 10rem;
+	gap: 2rem;
+}

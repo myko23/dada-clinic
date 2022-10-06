@@ -1,0 +1,23 @@
+.confirmmodal__box {
+	height: 20rem;
+	width: 50rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.confirmmodal__header {
+	font-size: 4rem;
+	margin-top: 1.5rem;
+	font-weight: 1000;
+}
+.confirmmodal__message {
+	font-size: 2rem;
+}
+.confirmmodal__button-container {
+	margin: auto 0 2rem 0;
+	display: flex;
+	gap: 2rem;
+	width: 80%;
+	align-items: stretch;
+	justify-content: center;
+}

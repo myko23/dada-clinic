@@ -1,0 +1,28 @@
+.mainapp {
+	display: grid;
+	grid-template-areas:
+		"topnav topnav topnav topnav topnav"
+		"sidenav displaynav displaynav displaynav displaynav";
+	grid-template-columns: 30rem auto;
+	grid-template-rows: 5rem auto;
+}
+.mainapp--toggle {
+	grid-template-areas:
+		"topnav topnav topnav topnav topnav"
+		"displaynav displaynav displaynav displaynav displaynav";
+	grid-template-columns: auto;
+}
+.mainapp__topnav {
+	background-color: var(--white);
+	grid-area: topnav;
+}
+.mainapp__sidenav {
+	background-color: var(--primary);
+	grid-area: sidenav;
+	overflow-x: hidden;
+}
+.mainapp__displaynav {
+	background-color: var(--secondary);
+	grid-area: displaynav;
+	overflow-x: hidden;
+}

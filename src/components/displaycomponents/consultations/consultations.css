@@ -1,0 +1,40 @@
+.consultations {
+	padding: 1rem 0 0 3rem;
+	display: flex;
+}
+.consultations__table {
+	background-color: var(--white);
+	width: 80rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.consultations__table-header {
+	text-transform: uppercase;
+	width: 100%;
+	height: 4rem;
+	background-color: var(--primary);
+	font-size: 2.5rem;
+	font-weight: 1000;
+}
+.consultations__forms {
+	padding-left: 3rem;
+	overflow-y: auto;
+	position: relative;
+}
+.consultations__edit-button {
+	border-radius: 2rem;
+	gap: 0.5rem;
+}
+
+.consultations--empty {
+	background-color: var(--selected);
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	text-transform: uppercase;
+	font-weight: 1000;
+	font-size: 2rem;
+}

@@ -1,0 +1,41 @@
+.displaynav {
+	display: grid;
+	grid-template-areas:
+		"datanav header header header header"
+		"datanav data data data data"
+		"datanav button button button button";
+	grid-template-rows: 7rem auto 7rem;
+	grid-template-columns: 6rem auto;
+	position: relative;
+}
+.displaynav--empty {
+	background-color: var(--primary);
+	opacity: 0.9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+
+	text-transform: uppercase;
+	font-weight: 1000;
+	font-size: 4rem;
+}
+
+.displaynav__datanav {
+	grid-area: datanav;
+	background-color: orange;
+}
+.displaynav__header {
+	grid-area: header;
+	background-color: green;
+}
+.displaynav__data {
+	grid-area: data;
+	background-color: var(--secondary);
+	overflow-y: hidden;
+	position: relative;
+}
+.displaynav__button-container {
+	grid-area: button;
+	background-color: yellow;
+}

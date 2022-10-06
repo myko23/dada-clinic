@@ -1,0 +1,17 @@
+.defaultbutton {
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 2rem;
+	padding: 1rem;
+	font-weight: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	border: 1px solid var(--text-color);
+	background-color: var(--secondary);
+	white-space: nowrap;
+}
+.defaultbutton:hover {
+	background-color: var(--selected);
+}

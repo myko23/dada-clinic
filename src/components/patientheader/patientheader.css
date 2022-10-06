@@ -1,0 +1,7 @@
+.patientheader {
+	padding-left: 3rem;
+	background-color: var(--secondary);
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+}

@@ -1,0 +1,25 @@
+.defaultinput {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-transform: uppercase;
+	border-bottom: 1px solid black;
+}
+.defaultinput__edit--false {
+	border: none;
+}
+.defaultinput__edit--false .defaultinput__input {
+	pointer-events: none;
+}
+.defaultinput__label {
+	font-weight: 1000;
+	margin-left: 0.5rem;
+	padding-bottom: 1rem;
+}
+.defaultinput__input {
+	font-size: 3rem;
+	font-weight: 1000;
+	white-space: nowrap;
+	background-color: inherit;
+	width: 100%;
+}

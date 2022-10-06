@@ -1,0 +1,24 @@
+.addconsultations {
+	background-color: var(--white);
+	padding: 1rem 3rem 3rem 3rem;
+	display: flex;
+	flex-direction: column;
+	overflow-y: hidden;
+}
+.addconsultations__header {
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: 1000;
+}
+.addconsultations__patient {
+	display: flex;
+	gap: 10rem;
+	margin-bottom: 2rem;
+}
+.addconsultations__form {
+	margin: 2rem 0;
+	overflow-y: scroll;
+}
+.addconsultations__back-button {
+	margin-left: auto;
+}

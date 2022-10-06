@@ -1,0 +1,21 @@
+.datanav {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary);
+}
+.datanav__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	height: 15rem;
+	border-bottom: 1px solid var(--white);
+	color: var(--text-color);
+	cursor: pointer;
+}
+.datanav__nav--selected {
+	background-color: var(--selected);
+}
+.datanav__nav:hover {
+	background-color: var(--selected);
+}

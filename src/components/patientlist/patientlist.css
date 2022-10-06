@@ -1,0 +1,12 @@
+.patientlist {
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	overflow-y: scroll;
+}
+.patientlist__empty {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	font-weight: 1000;
+}

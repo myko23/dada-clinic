@@ -1,0 +1,23 @@
+.topnav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+.topnav__patient-toggle-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+.topnav__patient-toggle-container {
+	user-select: none;
+}
+.topnav__patient-toggle {
+	font-weight: 1000;
+}
+.topnav__patient-label {
+	text-transform: uppercase;
+	font-weight: 1000;
+}

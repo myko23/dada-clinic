@@ -1,0 +1,13 @@
+.databuttons {
+	background-color: var(--secondary);
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	gap: 3rem;
+}
+.databuttons__input--edit {
+	background-color: dodgerblue;
+}
+.databuttons__input--edit:hover {
+	background-color: dodgerblue;
+}

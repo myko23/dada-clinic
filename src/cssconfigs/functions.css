@@ -1,0 +1,9 @@
+.fit {
+	width: 100%;
+	height: 100%;
+}
+.fc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

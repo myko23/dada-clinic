@@ -1,0 +1,39 @@
+.userselect {
+	position: relative;
+}
+.userselect__user-container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+.userselect__user-name {
+	font-weight: 1000;
+}
+.userselect__prompt {
+	background-color: var(--primary);
+	position: absolute;
+	left: 18%;
+	border: 1px solid black;
+	padding: 1rem 0;
+	border-radius: 1rem;
+
+	z-index: 90;
+}
+.userselect__option {
+	padding: 0 2rem;
+	text-align: left;
+	font-size: 1.8rem;
+	font-weight: 1000;
+	cursor: pointer;
+	border-bottom: 1px solid black;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.userselect__option:first-of-type {
+	border-top: 1px solid black;
+}
+.userselect__option:hover {
+	background-color: var(--selected);
+}
