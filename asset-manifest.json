@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dada-clinic/static/css/main.d74c92a4.css",
-    "main.js": "/dada-clinic/static/js/main.77563959.js",
+    "main.js": "/dada-clinic/static/js/main.e4d0d03c.js",
     "static/js/787.b61824b7.chunk.js": "/dada-clinic/static/js/787.b61824b7.chunk.js",
     "static/media/loginbackground.jpg": "/dada-clinic/static/media/loginbackground.ffbb322f3bc867a9bc37.jpg",
     "static/media/notification.svg?s3g3t9": "/dada-clinic/static/media/notification.5d0158671dd860c714c4.svg",
@@ -10,11 +10,11 @@
     "static/media/notification.ttf?s3g3t9": "/dada-clinic/static/media/notification.c5d9251ea82e42f75381.ttf",
     "index.html": "/dada-clinic/index.html",
     "main.d74c92a4.css.map": "/dada-clinic/static/css/main.d74c92a4.css.map",
-    "main.77563959.js.map": "/dada-clinic/static/js/main.77563959.js.map",
+    "main.e4d0d03c.js.map": "/dada-clinic/static/js/main.e4d0d03c.js.map",
     "787.b61824b7.chunk.js.map": "/dada-clinic/static/js/787.b61824b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d74c92a4.css",
-    "static/js/main.77563959.js"
+    "static/js/main.e4d0d03c.js"
   ]
 }
