@@ -7,7 +7,7 @@ export const useGetFetchQuery = (key) => {
 };
 
 const api = axios.create({
-	baseURL: "https://dada-clinic-backend.onrender.com",
+	baseURL: "http://localhost:3001",
 });
 
 //GET FUNCTIONS

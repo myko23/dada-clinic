@@ -12,7 +12,6 @@ export const getDateDiff = (datestart, dateend) => {
 		moment(datestart, "MM-DD-YYYY"),
 		"days"
 	);
-	console.log(days);
 
 	return days + (days === 1 ? " day" : " days");
 };

@@ -18,7 +18,7 @@ const LoginForm = () => {
 
 	useEffect(() => {
 		setLoginAuth(0);
-		setEmail("mykobacal23@gmail.com");
+		setEmail("mykobacal21@gmail.com");
 		setPassword("mykobacal");
 	}, []);
 
